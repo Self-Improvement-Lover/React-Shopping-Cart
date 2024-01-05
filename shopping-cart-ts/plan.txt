@@ -1,0 +1,36 @@
+
+
+Problem:
+
+ Alright so we have to make  a shopping cart page. it will have a banner at the top, with a shop text, 
+that when clicked it takes  you to the shopping page. And it wil also have a shopping cart icon, that when clicked 
+takes you to checkout, which will show you your items, amount of quantity and total price for everything, and for each 
+item. as for the shop page, it will have multiple columns of items that you can choose and click form, and when you click 
+it, the add to cart button, it will have in brackets showing you how many of that item you have added to cart.
+when checkout is pressed it will simply show nothing, a blank page since thats not part of the shopping cart application.
+
+Breaking down the problem:
+
+Ok, lets start with shopping cart page. i will paste the products file from the example project, and put that as a 
+file in the src folder. Now, we will have a separate component for shopping page, because i think  i need to do that 
+if i want to include pages in my project. i will create pages component, inside it will be a shop page folder, with 
+the shop component, and its css, and will also include the products in their since its related to the shop. 
+In the shop component we will return the the title of shop, in h1 tag, and also loop over the products. 
+we will use a state to also return a button, which will keep count of how much times that button wa clicked.
+in that case, what i should do is make another component called product that will then have a state for each one
+of them, so that for each produce the number of times its clicked is accurate. will put that Product component in 
+shop page folder. ok, thats the shop page done.
+
+Now, as for the cart, we will have a cart folder in pages folder, which will have a cart component and its css file. 
+Hmm, ok this is going to need to take in all the clicked products and simply them, and then show the total
+number, total price for everything. now, question i s how is it going to get this data? well, if i want to have 
+pages in this project then i am going to have to use useContext and define a state that would be track the amount of
+times that product has been clicked, probably say that in a quantity object. so i need to do that. then the cart, it 
+will also i have two buttons, the continue shopping-which will make it go back to shop page, and the checkout button- 
+which would simply go to a blank page. 
+
+As for setting up the route, i will use chatgpt ot help me learn how I can do that. 
+
+Lessons Learnt: 
+if something is passing the if statement, but nothing is being returned which you expect it to, make sue to have actually put a
+ return statement there, or that you used the return statement correctly. 

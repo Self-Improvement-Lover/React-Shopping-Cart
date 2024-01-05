@@ -1,0 +1,126 @@
+main.cart,
+.cart-product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.cart,
+.cart-product-list {
+  flex-direction: column;
+  gap: 7px;
+}
+
+.total {
+  font-size: 1.5em;
+  margin-top: 5px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.cart-buttons {
+  margin-top: 20px;
+}
+
+.continue-shopping,
+.checkout {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.continue-shopping {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.continue-shopping:hover {
+  background-color: #2980b9;
+}
+
+.checkout {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checkout:hover {
+  background-color: #c0392b;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .total {
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cart-buttons {
+    width: 400px;
+  }
+  .continue-shopping,
+  .checkout {
+    padding: 18px 38px;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .total {
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .cart-buttons {
+    width: 350px;
+  }
+  .continue-shopping,
+  .checkout {
+    padding: 15px 25px;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .total {
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cart-buttons {
+    width: 400px;
+  }
+  .continue-shopping,
+  .checkout {
+    padding: 18px 38px;
+    font-size: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  .total {
+    font-size: 3.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .cart-buttons {
+    width: 500px;
+  }
+  .continue-shopping,
+  .checkout {
+    padding: 18px 38px;
+    font-size: 2.5em;
+  }
+}
